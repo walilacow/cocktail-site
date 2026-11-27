@@ -42,3 +42,33 @@ footer.site { border-top: 1px solid var(--line); margin-top: 24px; }
 footer.site .in { max-width: 760px; margin: 0 auto; padding: 20px 16px 48px; color: var(--muted); font-size: .85rem; }
 footer.site .warn { color: var(--fg); font-weight: 700; font-size: .95rem; }
 @media (max-width: 480px) { h1 { font-size: 1.45rem; } main { padding-top: 16px; } }
+.tr-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; padding: 0; list-style: none; }
+.tr-chips li { margin: 0; }
+.tr-chips a { display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 4px 14px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; text-decoration: none; color: var(--fg); }
+.tr-chips a[aria-current] { background: var(--accent); border-color: var(--accent); color: var(--bg); font-weight: 700; }
+.tr-dot { display: inline-block; flex: none; width: 11px; height: 11px; border-radius: 50%; background: var(--lc); box-shadow: 0 0 0 1px var(--fg); }
+.tr-side { scroll-margin-top: 12px; }
+.tr-line { scroll-margin-top: 12px; }
+.tr-line > h3 { border-left: 5px solid var(--lc); padding-left: 10px; margin: 28px 0 12px; }
+.tr-line > h3 span { color: var(--muted); font-size: .88rem; font-weight: 400; margin-left: 8px; white-space: nowrap; }
+ol.tr-stations { list-style: none; padding: 0; margin: 0; }
+ol.tr-stations > li { position: relative; margin: 0; padding: 0 0 18px 56px; min-height: 44px; scroll-margin-top: 12px; }
+ol.tr-stations > li::before { content: ""; position: absolute; left: 20px; top: 22px; bottom: -22px; width: 4px; background: var(--lc); }
+ol.tr-stations > li:last-child::before { display: none; }
+.tr-badge { position: absolute; left: 0; top: 0; z-index: 1; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: var(--lc); box-shadow: 0 0 0 2px var(--bg); font-size: .78rem; font-weight: 700; line-height: 1; }
+.tr-xfer > .tr-badge { box-shadow: 0 0 0 2px var(--bg), 0 0 0 5px var(--fg); }
+.tr-branch > .tr-badge { border-radius: 10px; }
+.tr-stations h4 { font-size: 1.05rem; line-height: 1.4; margin: 0; padding-top: 2px; }
+.tr-sub { color: var(--muted); font-size: .88rem; margin: 0; }
+.tr-mark { display: inline-block; margin-left: 6px; padding: 0 8px; border: 1px solid var(--muted); border-radius: 999px; font-size: .75rem; font-weight: 400; vertical-align: middle; }
+.tr-change { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 12px; font-size: .88rem; margin: 2px 0 0; }
+.tr-change a, .tr-change span.tr-to { display: inline-flex; align-items: center; gap: 6px; }
+.tr-venues { background: var(--card); border-radius: 10px; margin: 8px 0 0; padding: 0 12px; }
+.tr-venues ul { list-style: none; padding: 0; margin: 0; }
+.tr-venues li { margin: 0; border-bottom: 1px solid var(--line); }
+.tr-venues > ul:last-child > li:last-child, .tr-venues details li:last-child { border-bottom: none; }
+.tr-venues li a { display: block; padding: 8px 0; text-decoration: none; color: var(--fg); }
+.tr-venues li a b { color: var(--accent); display: block; }
+.tr-venues li a span { display: block; color: var(--muted); font-size: .86rem; }
+.tr-venues details { margin: 0; }
+.tr-venues summary { padding: 10px 0; text-align: center; color: var(--accent); }
